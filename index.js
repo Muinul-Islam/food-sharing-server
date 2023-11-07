@@ -46,7 +46,7 @@ async function run() {
       res.send(result);
     })
 
-    app.get('/food', async (req, res) => {
+    app.get('/foods', async (req, res) => {
       const cursor = foodCollection.find();
       const food = await cursor.toArray();
       res.send(food);
